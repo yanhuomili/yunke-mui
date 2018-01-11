@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>Hello MUI</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<link rel="stylesheet" href="css/mui.min.css">
+	</head>
+
+	<body>
+		<!--下拉刷新容器-->
+		<div id="pullrefresh" class="mui-content mui-scroll-wrapper">
+			<div class="mui-scroll">
+				<!--数据列表-->
+				<ul class="mui-table-view mui-table-view-chevron">
+					
+				</ul>
+			</div>
+		</div>
+		<script src="js/mui.min.js"></script>
+		<script>
+			mui.init({
+				pullRefresh: {
+					container: '#pullrefresh',
+					down: {
+						callback: pulldownRefresh
+					},
+					up: {
+						contentrefresh: '正在加载...',
+						callback: pullupRefresh
+					}
+				}
+			});
+			//点击动态加载的数据
+			mui('.mui-table-view').on('tap','.mui-table-view-cell',function(){
+				alert('123')
+				
+			})
+			
+			/**
+			 * 下拉刷新具体业务实现
+			 */
+			function pulldownRefresh() {
+				setTimeout(function() {
+					var table = document.body.querySelector('.mui-table-view');
+					var cells = document.body.querySelectorAll('.mui-table-view-cell');
+					for (var i = cells.length, len = i + 3; i < len; i++) {
+						var li = document.createElement('li');
+						li.className = 'mui-table-view-cell';
+						li.innerHTML = '<a class="mui-navigate-right">Item ' + (i + 1) + '</a>';
+						//下拉刷新，新纪录插到最前面；
+						table.insertBefore(li, table.firstChild);
+					}
+					mui('#pullrefresh').pullRefresh().endPulldownToRefresh(); //refresh completed
+				}, 1500);
+			}
+			var count = 0;
+			/**
+			 * 上拉加载具体业务实现
+			 */
+			function pullupRefresh() {
+				setTimeout(function() {
+					mui('#pullrefresh').pullRefresh().endPullupToRefresh((++count > 2)); //参数为true代表没有更多数据了。
+					var table = document.body.querySelector('.mui-table-view');
+					var cells = document.body.querySelectorAll('.mui-table-view-cell');
+					for (var i = cells.length, len = i + 20; i < len; i++) {
+						var li = document.createElement('li');
+						li.className = 'mui-table-view-cell';
+						li.innerHTML = '<a class="mui-navigate-right">Item ' + (i + 1) + '</a>';
+						table.appendChild(li);
+					}
+				}, 1500);
+			}
+			//进入页面执行一次上拉加载事件
+			if (mui.os.plus) {
+				mui.plusReady(function() {
+					setTimeout(function() {
+						mui('#pullrefresh').pullRefresh().pullupLoading();
+					}, 1000);
+
+				});
+			} else {
+				mui.ready(function() {
+					mui('#pullrefresh').pullRefresh().pullupLoading();
+				});
+			}
+			
+			
+			
+			
+			
+			
+			//预加载页面，返回一个预加载的页面对象，预加载的页面不会显示等待框
+				var prePage=mui.preload({
+					url:'detailPage.html',
+					id:'detailPage.html'
+				})
+				
+
+				//点击列表的时候
+//				mui('.mui-table-view').on('tap','.mui-table-view-cell',function(){
+//					alert(123)
+//					//第一个是页面对象，第二个是自定义事件，跳到另一个页面后通过监听该事件来获取传过去的数据，第三个是传递到新页面的数据
+//					mui.fire(prePage,'newevent',{title:this.innerHTML});
+//					mui.openWindow({
+//						url:'detailPage.html',
+//						id:'detailPage.html',
+//						styles:{
+//							top:'0px',
+//							bottom:'0px',
+//							width:'100%',
+//							height:'100%'
+//						},
+//						extras:{
+//							
+//						},
+//						createNew:false,//默认不重复创建同样id的webview
+//						show:{
+//							autoShow:true,//页面loaded后自动显示
+//							aniShow:'slide-in-right',//页面转场动画
+//							duration:200,
+//							event:'titleUpdata',//默认页面显示时机，
+//							extras:{//窗口动画是否使用图片加速
+//								
+//							}
+//						},
+//						waiting:{
+//							autoShow:true,
+//							title:'加载中...',
+//							options:{
+//								width:'70%',
+//								height:'50%',
+//							}
+//						}
+//					})
+//				})
+			
+			
+		</script>
+	</body>
+
+</html>

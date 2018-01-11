@@ -1,0 +1,52 @@
+.mui-table-view:after { height: 0; }
+
+img { width: 100%; }
+
+i, b, em { font-style: normal; }
+
+ul, li { list-style: none; margin: 0; padding: 0; }
+
+.mui-bar { background-color: #1ca5ff; }
+
+.mui-title { color: #fff; }
+
+.mui-bar a { width: 40px; color: #fff; font-weight: 800; }
+.mui-bar a img { width: 100%; }
+
+.same { margin-bottom: 10px; background: #fff; }
+.same .mui-table-view:before { height: 0; }
+.same .mui-table-view-cell:after { left: 0; background-color: #eee; }
+.same .top { border-bottom: 1px solid #eee; font-size: 16px; }
+.same .top a { height: 40px; display: flex; justify-content: space-between; align-items: center; padding: 0 10px; }
+.same .top a p { display: flex; align-items: center; color: #0060A5; font-size: 12px; }
+.same .top a p b { display: inline-block; width: 20px; height: 20px; margin-right: 10px; }
+.same .top a p i { font-size: 16px; color: #333; }
+.same .top a p:last-child { margin-right: 20px; }
+.same .grids { padding: 0 10px 10px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; }
+.same .grids li { width: 32%; height: 40px; line-height: 40px; background: #eee !important; margin: 0 0 10px !important; padding: 0 !important; font-size: 15px !important; }
+.same .list li { display: flex; align-items: center; font-size: 15px !important; padding: 11px 10px; }
+.same .list li i { color: #f60; margin-right: 10px; }
+
+.other { margin-bottom: 1px; }
+
+.more { display: flex; align-items: center; justify-content: center; width: 100%; height: 80px; background: #fff; font-size: 14px; color: #666; }
+.more b { display: inline-block; width: 15px; height: 15px; margin-left: 10px; }
+
+.sb { display: flex; align-items: center; justify-content: space-between; padding: 0 10px; height: 40px; }
+.sb p { display: flex; align-items: center; }
+.sb p b { display: inline-block; width: 20px; height: 20px; margin-right: 10px; }
+.sb p span { color: #333; font-size: 15px; }
+.sb p em { display: inline-block; width: 20px; height: 20px; margin-right: 10px; }
+
+.asb { border-bottom: 1px solid #eee; }
+.asb li a { height: 40px; display: flex !important; justify-content: space-between; align-items: center; padding: 0 10px; }
+.asb li a p { display: flex; align-items: center; color: #0060A5; font-size: 12px; }
+.asb li a p i { font-size: 16px; color: #333; }
+.asb li a p b { display: inline-block; width: 20px; height: 20px; margin-right: 10px; }
+.asb li a p em { display: inline-block; width: 20px; height: 20px; margin-right: 10px; }
+.asb li a p:last-child { margin-right: 20px; }
+
+.imgsb li a { display: flex; align-items: flex-start; }
+.imgsb li a img { width: 5px; height: 5px !important; margin-top: 8px; }
+.imgsb li a .mui-ellipsis { font-size: 15px; white-space: normal; color: #333; }
+.imgsb .mui-table-view-cell:after { height: 0; }

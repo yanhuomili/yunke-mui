@@ -1,0 +1,50 @@
+.mui-table-view:after { height: 0; }
+
+img { width: 100%; }
+
+i, b, em { font-style: normal; }
+
+ul, li { list-style: none; margin: 0; padding: 0; }
+
+.mui-bar { background-color: #1ca5ff; }
+
+.asb li a { height: 40px; display: -webkit-box !important; display: -webkit-flex !important; display: -ms-flexbox !important; display: flex !important; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; padding: 0 10px !important; }
+.asb li a p { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; color: #0060A5; font-size: 16px; }
+.asb li a p i { font-size: 16px; color: #333; }
+.asb li a p b { display: inline-block; width: 20px; height: 20px; margin-right: 10px; }
+.asb li a p em { display: inline-block; width: 20px; height: 20px; margin-right: 10px; }
+.asb li a p:last-child { margin-right: 20px; }
+
+.jsb { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; }
+
+.mui-title { color: #fff; }
+
+.mui-bar a { width: 40px; color: #fff; font-weight: 800; }
+.mui-bar a img { width: 100%; }
+
+.mui-table-view:before { height: 0; }
+
+.mui-table-view-cell:after { left: 0; background: #eee; }
+
+.mui-content { background: #fff; }
+
+.top { width: 100%; background: #fff; }
+.top dl { width: 100%; padding: 0 10px 5px; background: #fff; }
+.top dl dt p { margin-bottom: 5px; }
+.top dl dt p:last-child { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; margin-left: 10px; }
+.top dl dd { width: 20px; height: 20px; }
+
+.text p { padding: 0 10px; line-height: 1.5; color: #999; }
+.text .pic { width: 100%; }
+
+.common > ul { background: #eee; width: 355px; margin: 0 auto; }
+.common > ul a { padding: 0 !important; margin: 0; }
+.common .comment { width: 100%; padding: 20px 20px 20px 30px; box-sizing: border-box; }
+.common .comment dl { -webkit-box-align: start; -webkit-align-items: flex-start; -ms-flex-align: start; align-items: flex-start; -webkit-box-pack: start; -webkit-justify-content: flex-start; -ms-flex-pack: start; justify-content: flex-start; margin: 0; padding: 10px 0; box-sizing: border-box; border-bottom: 1px solid #eee; }
+.common .comment dl dt { width: 25px; height: 25px; margin-right: 10px; }
+.common .comment dl dd { -webkit-box-flex: 1; -webkit-flex: 1; -ms-flex: 1; flex: 1; margin: 0; width: 100%; }
+.common .comment dl dd h3 { font-size: 14px; font-weight: normal; color: #999; }
+.common .comment dl dd h4 { font-size: 16px; font-weight: normal; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; margin-bottom: 10px; color: #333; }
+.common .comment dl dd p b { display: inline-block; width: 20px; height: 20px; }
+.common .comment dl dd p em { display: inline-block; width: 20px; height: 20px; }
+.common .comment dl dd .reply { color: #46c7fe; }

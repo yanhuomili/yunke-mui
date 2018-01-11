@@ -1,0 +1,45 @@
+{
+  "a.html": {
+    "resources": [
+      "b.html",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css"
+    ],
+    "refer": [
+      "b.html"
+    ]
+  },
+  "index1.html": {
+    "resources": [
+      "img/shouye_pic1.png",
+      "img/tuijian.png",
+      "img/denglCSM.png",
+      "fonts/mui.ttf",
+      "img/hot.png",
+      "img/shouye_bg.png",
+      "img/huangjing.png",
+      "css/index.css",
+      "js/common.js",
+      "js/mui.min.js",
+      "img/new.png",
+      "img/deng.png",
+      "css/mui.min.css",
+      "img/luntan.png"
+    ],
+    "refer": [
+      "a.html",
+      "productList.html"
+    ]
+  },
+  "productList.html": {
+    "resources": [
+      "img/liebiao_pic1.png",
+      "img/liebiao_pic5.png",
+      "img/liebiao_pic3.png",
+      "css/productList.css",
+      "img/liebiao_pic2.png",
+      "img/liebiao_pic4.png"
+    ]
+  }
+}

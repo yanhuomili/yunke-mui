@@ -1,0 +1,199 @@
+@charset "UTF-8";
+.mui-table-view:after{
+    height: 0;
+}
+img{
+    width: 100%;
+}
+i,b,em{
+    font-style: normal;
+}
+ul,li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+//改写头部样式
+.mui-bar{
+    background-color: #1ca5ff;
+}
+.mui-title{
+    color: #fff;
+}
+.mui-bar a{
+    width:40px;
+//  height: 60px;
+//  padding: 0;
+    color: #fff;
+    font-weight: 800;
+    img{
+        width: 100%;
+    }
+}
+.same{
+    margin-bottom: 10px;
+    .mui-table-view:before{
+        height: 0;
+    }
+    .mui-table-view-cell:after{
+            left: 0;
+            background-color: #eee;
+        }
+   .top{
+       border-bottom: 1px solid #eee;
+       a{
+           height: 40px;
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+           padding: 0 10px;
+           p{
+               display: flex;
+               align-items: center;
+               color: #0060A5;
+               font-size: 12px;
+               i{
+                   font-size: 16px;
+                   color: #333;
+               }
+           }
+           
+           p:last-child{
+               margin-right: 20px;
+           }
+       }
+    }
+    .hot{
+        li{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 10px;
+            height: 40px;
+            p{
+                display: flex;
+                align-items: center;
+                b{
+                    display: inline-block;
+                    width: 20px;
+                    height: 20px;
+                    margin-right: 10px;
+                }
+                span{
+                    color: #333;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
+.other{
+    margin-bottom: 1px;
+}
+.more{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80px;
+    background: #fff;
+    font-size: 14px;
+    color: #666;
+    b{
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        margin-left: 10px;
+    }
+}
+
+//左右布局
+.sb{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    height: 40px;
+    p{
+        display: flex;
+        align-items: center;
+        b{
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+        }
+        span{
+            color: #333;
+            font-size: 15px;
+        }
+        em{
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+        }
+    }
+}
+
+//带箭头的左右布局
+.asb{
+   border-bottom: 1px solid #eee;
+   li{
+       a{
+           height: 40px;
+           display: flex !important;
+           justify-content: space-between;
+           align-items: center;
+           padding: 0 10px;
+           p{
+               display: flex;
+               align-items: center;
+               color: #0060A5;
+               font-size: 12px;
+               i{
+                   font-size: 16px;
+                   color: #333;
+               }
+               b{
+                   display: inline-block;
+                   width: 20px;
+                   height: 20px;
+                   margin-right: 10px;
+               }
+               em{
+                   display: inline-block;
+                   width: 20px;
+                   height: 20px;
+                   margin-right: 10px;
+               }
+           }
+           p:last-child{
+               margin-right: 20px;
+           }
+       }
+   }
+   
+}
+//带img标签的列表
+.imgsb{
+    li{
+        a{
+            display: flex;
+            align-items: flex-start;
+            img{
+                width: 5px;
+                height: 5px !important;
+                margin-top: 8px;
+            }
+            .mui-ellipsis{
+                font-size: 15px;
+                white-space: normal;
+                color: #333;
+            }
+        }
+    }
+    .mui-table-view-cell:after{
+        height: 0;
+    }
+}

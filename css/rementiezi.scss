@@ -1,0 +1,80 @@
+@charset "UTF-8";
+.mui-table-view:after{
+    height: 0;
+}
+img{
+    width: 100%;
+}
+i,b,em{
+    font-style: normal;
+}
+ul,li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+//改写头部样式
+.mui-bar{
+    background-color: #1ca5ff;
+}
+.mui-title{
+    color: #fff;
+}
+.mui-bar a{
+    width:40px;
+//  height: 60px;
+//  padding: 0;
+    color: #fff;
+    font-weight: 800;
+    img{
+        width: 100%;
+    }
+}
+.mui-table-view:before{
+    height: 0;
+}
+.mui-table-view-cell:after{
+    left: 0;
+    background: #eee;
+}
+.mui-table-view{
+    margin-top: 0 !important;
+    li{
+        padding: 10px 10px 0 10px;
+        p:first-child{
+            font-size: 15px;
+            i{
+                color: #333;
+            }
+        }
+        p:last-child{
+            font-size: 12px;
+            i{
+                color: #323232;
+            }
+        }
+    }
+    
+}
+.sb{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    i{
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    b{
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+    }
+    em{
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+    }
+}

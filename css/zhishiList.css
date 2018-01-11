@@ -1,0 +1,24 @@
+.mui-table-view:after { height: 0; }
+
+img { width: 100%; }
+
+i, b, em { font-style: normal; }
+
+ul, li { list-style: none; margin: 0; padding: 0; }
+
+.mui-bar { background-color: #1ca5ff; }
+
+.mui-title { color: #fff; }
+
+.mui-bar a { width: 40px; color: #fff; font-weight: 800; }
+.mui-bar a img { width: 100%; }
+
+.list { margin-top: 0 !important; }
+.list li { padding: 10px 25px 10px 10px; }
+.list li p:first-child { display: flex; align-items: center; }
+.list li p:first-child i { color: #f60; margin-right: 10px; }
+.list li p:last-child { display: flex; align-items: center; justify-content: space-between; margin-top: 5px; }
+.list li p:last-child span { display: flex; align-items: center; }
+.list li p:last-child span em { display: inline-block; width: 20px; height: 20px; margin-right: 10px; }
+
+.mui-table-view-cell:after { left: 0; background: #eee; }

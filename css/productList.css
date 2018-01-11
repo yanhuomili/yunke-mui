@@ -1,0 +1,24 @@
+.mui-table-view:after { height: 0; }
+
+img { width: 100%; }
+
+i, b, em { font-style: normal; }
+
+ul, li { list-style: none; margin: 0; padding: 0; }
+
+.mui-bar { background-color: #1ca5ff; }
+
+.mui-title { color: #fff; }
+
+.mui-bar a { width: 40px; color: #fff; font-weight: 800; }
+.mui-bar a img { width: 100%; }
+
+.mui-table-view:before { height: 0; }
+
+.mui-table-view-cell:after { left: 0; background: #eee; }
+
+.productList li a { padding: 11px 10px !important; }
+.productList li a img { max-width: 100px !important; height: 75px !important; }
+.productList li a .title { display: inline-block; margin-bottom: 10px; }
+.productList li a .mui-ellipsis { overflow: hidden; white-space: normal; }
+.productList li a .mui-ellipsis i { margin-right: 10px; }

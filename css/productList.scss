@@ -1,0 +1,64 @@
+@charset "UTF-8";
+.mui-table-view:after{
+    height: 0;
+}
+img{
+    width: 100%;
+}
+i,b,em{
+    font-style: normal;
+}
+ul,li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+//改写头部样式
+.mui-bar{
+    background-color: #1ca5ff;
+}
+.mui-title{
+    color: #fff;
+}
+.mui-bar a{
+    width:40px;
+//  height: 60px;
+//  padding: 0;
+    color: #fff;
+    font-weight: 800;
+    img{
+        width: 100%;
+    }
+}
+//列表顶部横线
+.mui-table-view:before{
+    height: 0;
+}
+//每个列表选项底部横线
+.mui-table-view-cell:after{
+    left: 0;
+    background: #eee;
+}
+
+.productList{
+    li{
+        a{
+            padding: 11px 10px !important;
+            img{
+                max-width: 100px !important;
+                height: 75px !important;
+            }
+            .title{
+                display: inline-block;
+                margin-bottom: 10px;
+            }
+            .mui-ellipsis{
+                    overflow: hidden;
+                    white-space: normal;
+                    i{
+                        margin-right: 10px;
+                    }
+            }
+        }
+    }
+}

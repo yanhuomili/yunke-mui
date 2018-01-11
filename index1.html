@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <script src="js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <link href="css/index.css" rel="stylesheet"/>
+    <style type="text/css">
+    	/*a标签*/
+    	.st{
+    		/*在顶端对齐*/
+    		align-items: flex-start !important;
+    		/*不设置溢出隐藏*/
+    		white-space: inherit !important;
+    	}
+    	.st p{
+    		/*不设置溢出隐藏*/
+    		white-space: initial;
+    	}
+    </style>
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav">
+	    <a class="mui-action-back mui-icon mui-icon-bars mui-pull-left"></a>
+	    <a class=" mui-icon  mui-pull-right"><img src="img/denglCSM.png"/></a>
+	    <h1 class="mui-title">云科易服</h1>
+	</header>
+	<div class="mui-content">
+		
+		
+		<!--轮播图-->
+		<div id="slider" class="mui-slider" >
+		  <div class="mui-slider-group mui-slider-loop">
+		    <!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+		    <div class="mui-slider-item mui-slider-item-duplicate">
+		      <a href="#">
+		        <img src="img/shouye_bg.png">
+		      </a>
+		    </div>
+		    <!-- 第一张 -->
+		    <div class="mui-slider-item">
+		      <a href="#">
+		        <img src="img/shouye_bg.png">
+		      </a>
+		    </div>
+		    <!-- 第二张 -->
+		    <div class="mui-slider-item">
+		      <a href="#">
+		        <img src="img/shouye_bg.png">
+		      </a>
+		    </div>
+		    <!-- 第三张 -->
+		    <div class="mui-slider-item">
+		      <a href="#">
+		        <img src="img/shouye_bg.png">
+		      </a>
+		    </div>
+		    <!-- 第四张 -->
+		    <div class="mui-slider-item">
+		      <a href="#">
+		        <img src="img/shouye_bg.png">
+		      </a>
+		    </div>
+		    <!--第五张-->
+		     <div class="mui-slider-item">
+		      <a href="#">
+		        <img src="img/shouye_bg.png">
+		      </a>
+		    </div>
+		    <!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+		    <div class="mui-slider-item mui-slider-item-duplicate">
+		      <a href="#">
+		        <img src="img/shouye_bg.png">
+		      </a>
+		    </div>
+		  </div>
+		  <!--对应指示点-->
+		  <div class="mui-slider-indicator">
+		    <div class="mui-indicator mui-active"></div>
+		    <div class="mui-indicator"></div>
+		    <div class="mui-indicator"></div>
+		    <div class="mui-indicator"></div>
+		    <div class="mui-indicator"></div>
+		  </div>
+		</div>
+		<ul class="mui-table-view hot">
+		    <li class="mui-table-view-cell mui-media">
+		        <a class="st" href="javascript:;" style="display: flex;align-items: center; padding: 11px 10px;">
+		            <img class="mui-media-object mui-pull-left" src="img/new.png" style="width:20px;height: 20px;">
+		            <div class="mui-media-body">
+		               	<!--即将有新产品上线请尽情期待-->
+		                <p class="mui-ellipsis">即将有新产品上线请尽情期待即将有新产品上线请尽情期待</p>
+		            </div>
+		        </a>
+		    </li>
+		</ul>
+		<div class="mui-input-row mui-checkbox ">
+		    <label>Checkbox</label>
+		    <input name="Checkbox" type="checkbox" checked>
+		</div>
+		
+		<div class="same">
+			<ul class="mui-table-view top">
+				<li class="mui-table-view-cell">
+					<a href="###" id="productList.html" onclick="run(this.id)" class="mui-navigate-right">
+						<p><b><img src="img/hot.png"/></b><i>产品推荐</i></p>
+						<p>更多</p>
+					</a>
+				</li>
+			</ul>
+			<ul class="list">
+				<li>
+					<div class="mui-card">
+						<div class="mui-card-header">
+							<img src="img/shouye_pic1.png"/>
+						</div>
+						<div class="mui-card-content">
+							<p>云科易服</p>
+							<h5>面向it生产商及IT服务提供商</h5>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="mui-card">
+						<div class="mui-card-header">
+							<img src="img/shouye_pic1.png"/>
+						</div>
+						<div class="mui-card-content">
+							<p>SPLUNK</p>
+							<h5>数据储存、管理、分析</h5>
+						</div>
+					</div>
+				</li>
+				
+			</ul>
+		</div>
+		
+		<!--知识必备-->
+		<div class="same">
+			<ul class="mui-table-view top">
+				<li class="mui-table-view-cell">
+					<a href="###" id="zhishiku.html" onclick="run(this.id)" class="mui-navigate-right">
+						<p><b><img src="img/deng.png"/></b><i>知识必备</i></p>
+						<p>更多</p>
+					</a>
+				</li>
+			</ul>
+			<ul class="mui-table-view zhishiList">
+		        <li class="mui-table-view-cell">
+	                <i>[硬件]</i>
+	                <span>登云数据库一体机模拟开发</span>
+		        </li>
+		        <li class="mui-table-view-cell">
+	                <i>[硬件]</i>
+	                <span>登云数据库一体机模拟开发</span>
+		        </li>
+		        <li class="mui-table-view-cell">
+	                <i>[硬件]</i>
+	                <span>登云数据库一体机模拟开发</span>
+		        </li>
+		        <li class="mui-table-view-cell">
+	                <i>[硬件]</i>
+	                <span>登云数据库一体机模拟开发</span>
+		        </li>
+		    </ul>
+		</div>
+		<!--论坛-->
+		<div class="same">
+			<ul class="mui-table-view top">
+				<li class="mui-table-view-cell">
+					<a href="###" id="luntan.html" onclick="run(this.id)" class="mui-navigate-right">
+						<p><b><img src="img/luntan.png"/></b><i>易服论坛</i></p>
+						<p>更多</p>
+					</a>
+				</li>
+			</ul>
+			<ul class="mui-table-view luntanList">
+		        <li class="mui-table-view-cell">
+		        	<p>
+		        		<b><img src="img/tuijian.png"/></b>
+		        		<i>易服论坛登云数据库最安全的软件系统</i>
+		        	</p>
+	                <p>2017-9-22</p>
+		        </li>
+		        <li class="mui-table-view-cell">
+		        	<p>
+		        		<b><img src="img/tuijian.png"/></b>
+		        		<i>易服论坛登云数据库最安全的软件系统</i>
+		        	</p>
+	                <p>2017-9-22</p>
+		        </li>
+		        <li class="mui-table-view-cell">
+		        	<p>
+		        		<b><img src="img/tuijian.png"/></b>
+		        		<i>易服论坛登云数据库最安全的软件系统</i>
+		        	</p>
+	                <p>2017-9-22</p>
+		        </li>
+		        <li class="mui-table-view-cell">
+		        	<p>
+		        		<b><img src="img/tuijian.png"/></b>
+		        		<i>易服论坛登云数据库最安全的软件系统</i>
+		        	</p>
+	                <p>2017-9-22</p>
+		        </li>
+		    </ul>
+		    
+		    <ul class="mui-table-view">
+		        <li class="mui-table-view-cell mui-media">
+		            <a href="javascript:;" style="padding: 11px 15px 11px 10px;">
+		                <img style="width: 20px;height: 20px;" class="mui-media-object mui-pull-left" src="img/huangjing.png">
+		                <div class="mui-media-body" style="display: flex;justify-content: space-between;align-items: center;">
+		                    <span style="font-size: 15px;color: #333;">登云科技股份有限公司</span>	
+		                    <i style="font-size: 12px;color: #999;">2017-9-22</i>	
+		                </div>
+		            </a>
+		        </li>
+		        <li class="mui-table-view-cell mui-media">
+		            <a href="javascript:;" style="padding: 11px 15px 11px 10px;">
+		                <img style="width: 20px;height: 20px;" class="mui-media-object mui-pull-left" src="img/huangjing.png">
+		                <div class="mui-media-body" style="display: flex;justify-content: space-between;align-items: center;">
+		                    <span style="font-size: 15px;color: #333;">登云科技股份有限公司</span>	
+		                    <i style="font-size: 12px;color: #999;">2017-9-22</i>	
+		                </div>
+		            </a>
+		        </li>
+		        <li class="mui-table-view-cell mui-media">
+		            <a href="javascript:;" style="padding: 11px 15px 11px 10px;">
+		                <img style="width: 20px;height: 20px;" class="mui-media-object mui-pull-left" src="img/huangjing.png">
+		                <div class="mui-media-body" style="display: flex;justify-content: space-between;align-items: center;">
+		                    <span style="font-size: 15px;color: #333;">登云科技股份有限公司</span>	
+		                    <i style="font-size: 12px;color: #999;">2017-9-22</i>	
+		                </div>
+		            </a>
+		        </li>
+		        <li class="mui-table-view-cell mui-media">
+		            <a href="javascript:;" style="padding: 11px 15px 11px 10px;">
+		                <img style="width: 20px;height: 20px;" class="mui-media-object mui-pull-left" src="img/huangjing.png">
+		                <div class="mui-media-body" style="display: flex;justify-content: space-between;align-items: center;">
+		                    <span style="font-size: 15px;color: #333;">登云科技股份有限公司</span>	
+		                    <i style="font-size: 12px;color: #999;">2017-9-22</i>	
+		                </div>
+		            </a>
+		        </li>
+		       
+		    </ul>
+		</div>
+		<a href="###" class="mui-btn mui-btn-success mui-block aaa">打开a页面</a>
+		<br />
+		<a href="###" class="mui-btn mui-btn-success mui-block pop">弹出系统选择按钮框</a>
+		<br />
+		<a href="###" class="mui-btn mui-btn-success mui-block w">弹出系统自等待对话框</a>
+		<br />
+		<a href="###" class="mui-btn mui-btn-success mui-block date">弹出系统日期对话框</a>
+		<br />
+		<a href="###" class="mui-btn mui-btn-success mui-block showM">显示导航菜单</a>
+		<br />
+		<a href="###" class="mui-btn mui-btn-success mui-block hideM">隐藏导航菜单</a>
+		<br />
+		<a href="###" class="mui-btn mui-btn-success mui-block camera">拍照</a>
+		<br />
+		<a href="###" class="mui-btn mui-btn-success mui-block" onclick="videoCapture()">摄像</a>
+		<br />
+		<a href="###" class="mui-btn mui-btn-success mui-block" onclick="stopCapture()">停止摄像</a>
+		<br />
+		<a href="###" class="mui-btn mui-btn-success mui-block jisuan">计算缓存</a>
+		<br />
+		<a href="###" class="mui-btn mui-btn-success mui-block qingchu">清除缓存</a>
+		<br />
+		<a href="###" class="mui-btn mui-btn-success mui-block find">查找联系人</a>
+		<br />
+		<a href="###" class="mui-btn mui-btn-success mui-block change">前台切换到后台</a>
+		<br />
+		<a href="###" class="mui-btn mui-btn-success mui-block pick">从相册选一张</a>
+		<br />
+		<a href="###" class="mui-btn mui-btn-success mui-block picks">从相册选多张</a>
+		<br />
+		<a href="###" class="mui-btn mui-btn-success mui-block picked">已选中的图片</a>
+		<br /><a href="###" class="mui-btn mui-btn-success mui-block createUpload">上传</a>
+		<br />
+		<!--<br /><a href="###" class="mui-btn mui-btn-success mui-block" onclick="calculateArea()">计算地图面积</a>
+		<br />
+		<br /><a href="###" class="mui-btn mui-btn-success mui-block" onclick="addMarker()">添加地图标记</a>
+		<br />
+		<br /><a href="###" class="mui-btn mui-btn-success mui-block" onclick="clearMarker()">删除地图标记</a>
+		<br />
+		<br /><a href="###" class="mui-btn mui-btn-success mui-block" onclick="showMap()">显示地图</a>
+		<br />
+		<br /><a href="###" class="mui-btn mui-btn-success mui-block" onclick="hideMap()">隐藏地图</a>
+		<br />
+		
+		<br /><a href="###" class="mui-btn mui-btn-success mui-block" onclick="closeMap()">关闭地图</a>
+		<br />
+		<br /><a href="###" class="mui-btn mui-btn-success mui-block" onclick="getUserLocation()">获取用户当前地理信息</a>
+		<br />
+		
+		<br /><a href="###" class="mui-btn mui-btn-success mui-block" onclick="isUserLocation()">是否打开用户位置</a>
+		<br />
+		<br /><a href="###" class="mui-btn mui-btn-success mui-block" onclick="showTraffic()">打开交通信息层</a>
+		<br />
+		<br /><a href="###" class="mui-btn mui-btn-success mui-block" onclick="hideTraffic()">关闭交通信息层</a>-->
+		<br />
+		
+		<div id="map" style="width:100%;height:300px;position:fixed;bottom: 0;left: 0;"></div>
+		
+		
+	</div>
+	<script type="text/javascript" src="js/common.js"></script>
+	<script type="text/javascript">
+		
+	
+		mui.init(); 
+		mui('.mui-slider').slider({
+			interval:2000
+		})
+		get('luntanList','tiezixiangqing.html');
+		get('zhishiList','zhishiList.html');
+		get('list','productDetail.html');
+		
+		function get(node,url){
+			var ul=document.getElementsByClassName(node)[0];
+			var li=ul.getElementsByTagName('li');
+			for(var i=0;i<li.length;i++){
+				li[i].zdy=i;
+				li[i].onclick=function(){
+					run(url);
+				}
+			}
+		}
+		//打开a页面
+		document.getElementsByClassName('aaa')[0].onclick=function(){
+			run('a.html');
+		}
+		mui.plusReady(function(){
+			//// 弹出系统选择按钮框`
+			document.getElementsByClassName('pop')[0].onclick=function(){
+				var actionbuttons=[{title:"不同意",style:"destructive"},{title:"test1"},{title:"test2"},{title:"3"}];
+				var actionstyle={title:"Plus is ready!",cancel:"取消",buttons:actionbuttons};
+				plus.nativeUI.actionSheet( actionstyle, function(e){
+					if(e.index>0){
+						mui.toast( "User pressed: "+actionbuttons[e.index-1].title );
+					}else{
+						mui.toast( "User pressed 取消" );
+					}
+				} );
+			}
+			
+			// 弹出系统等待对话框
+			document.getElementsByClassName('w')[0].onclick=function(){
+				plus.nativeUI.showWaiting( "等待中..." );
+				setTimeout( function(){
+					plus.nativeUI.closeWaiting();
+				}, 5000 );
+			}
+			
+			// 弹出系统等日期对话框
+			document.getElementsByClassName('date')[0].onclick=function(){
+				plus.nativeUI.pickDate( function(e){
+					var d=e.date;
+					mui.toast( "选择的日期："+d.getFullYear()+"-"+(d.getMonth()+1)+"-"+d.getDate() );
+				},function(e){
+					mui.toast( "未选择日期："+e.message );
+				});
+			}
+	
+			// 显示导航菜单
+			document.getElementsByClassName('showM')[0].onclick=function(){
+				alert(123)
+				plus.nativeUI.showMenu({title:"比价",badge:true},
+				[{title:"淘宝网"},
+				{title:"京东"},
+				{title:"唯品会",checked:true}],
+				function(e){
+					var index = e.index;
+					var item = e.target;
+					console.log("用户点击了第"+index+"项: "+item.title);
+				});
+			}
+			
+			//隐藏导航菜单
+			document.getElementsByClassName('hideM')[0].onclick=function(){
+				alert(123)
+				plus.nativeUI.hideMenu();
+			}
+			//拍照
+			document.getElementsByClassName('camera')[0].onclick=function(){
+				mui.toast('拍照');
+				var cmr = plus.camera.getCamera();
+				var res = cmr.supportedImageResolutions[0];
+				var fmt = cmr.supportedImageFormats[0];
+				mui.toast("Resolution: "+res+", Format: "+fmt);
+				cmr.captureImage( function( path ){
+						alert( "Capture image success: " + path );  
+					},
+					function( error ) {
+						alert( "Capture image failed: " + error.message );
+					},
+					{resolution:res,format:fmt}
+				);
+			}
+			//摄像
+			var cmr=null;
+			function videoCapture(){
+				cmr = plus.camera.getCamera();
+				var res = cmr.supportedVideoResolutions[0];
+				var fmt = cmr.supportedVideoFormats[0];
+				console.log("Resolution: "+res+", Format: "+fmt);
+				cmr.startVideoCapture( function( path ){
+						alert( "Capture video success: " + path );  
+					},
+					function( error ) {
+						alert( "Capture video failed: " + error.message );
+					},
+					{resolution:res,format:fmt}
+				);
+				// 拍摄10s后自动完成 
+				setTimeout( stopCapture, 10000 );
+			}
+			// 停止摄像
+			function stopCapture(){
+				console.log("stopCapture");
+				cmr.stopVideoCapture();
+			}
+			//计算缓存
+			document.getElementsByClassName('jisuan')[0].onclick=function(){
+				plus.cache.calculate( function ( size ) {
+					alert( "Application cache size: " + size + " byte!" );
+				});
+			}
+			//清除缓存
+			document.getElementsByClassName('qingchu')[0].onclick=function(){
+				plus.cache.clear( function () {
+					alert( "Application cache size: " + size + " byte!" );
+				});
+			}
+			
+			
+			//查找联系人
+			document.getElementsByClassName('find')[0].onclick=function(){
+				plus.contacts.getAddressBook(plus.contacts.ADDRESSBOOK_PHONE, function (addressbook) {
+					addressbook.find(["displayName","phoneNumbers"],function(contacts){
+						alert(contacts.length);
+					}, function () {
+						alert("error");
+					},{multiple:true});
+				},function(e){
+					alert("Get address book failed: " + e.message);
+				});
+			}
+			//前台切换到后台
+			document.addEventListener("pause", function(){
+				mui.toast('后台运行');
+			}, false);
+			
+			//从相册中选一张
+			document.getElementsByClassName('pick')[0].onclick=function(){
+				// 从相册中选择图片
+				mui.toast("从相册中选择图片:");
+			    plus.gallery.pick( function(path){
+			    	mui.toast(path);
+			    }, function ( e ) {
+			    	mui.toast( "取消选择图片" );
+			    }, {filter:"image"} );
+			}
+			
+			
+			//从相册中选多张
+			var lfs=[];// 保留上次选择图片列表
+			document.getElementsByClassName('picks')[0].onclick=function(){
+			    // 从相册中选择图片
+				console.log("从相册中选择多张图片:");
+			    plus.gallery.pick( function(e){
+			    	for(var i in e.files){
+			    		lfs.push(e.files[i])
+				    	mui.toast(e.files[i]);
+			    	}
+			    }, function ( e ) {
+			    	console.log( "取消选择图片" );
+			    },{filter:"image",multiple:true,maxinum:3,system:false,onmaxed:function(){
+			    	plus.nativeUI.alert('最多能选3张图片');
+			    }});
+			}
+			
+			//已选中的图片
+			document.getElementsByClassName('picked')[0].onclick=function(){
+				mui.toast(lfs);
+			}
+			
+			// 创建上传任务
+			var r=null;
+			document.getElementsByClassName('createUpload')[0].onclick=function(){
+				var task = plus.uploader.createUpload( "http://www.test.com/upload.do", 
+					{ method:"POST",blocksize:204800,priority:100 },
+					function ( t, status ) {
+						// 上传完成
+						if ( status == 200 ) { 
+							alert( "Upload success: " + t.url );
+						} else {
+							alert( "Upload failed: " + status );
+						}
+					}
+				);
+				task.addFile( "_www/a.doc", {key:"testdoc"} );
+				task.addData( "string_key", "string_value" );
+				//task.addEventListener( "statechanged", onStateChanged, false );
+				task.start();
+			}
+			
+			
+			/*var map=null;
+			map = new plus.maps.Map("map");//创建地图对象
+			map.centerAndZoom( new plus.maps.Point(116.347496,39.970191), 18 );//实例化地图
+			addMarker();//添加地图标记
+			// 获取当前地图显示的地理区域面积
+			
+			// 添加标点
+			var markers=[],i=0;
+			function addMarker(){
+				var marker=new plus.maps.Marker(new plus.maps.Point(116.347496+0.001*i,39.970191+0.001*i));
+				marker.setIcon("img/case.png");
+				marker.setLabel("HBuilder");
+				var bubble = new plus.maps.Bubble("打造最好的HTML5移动开发工具");
+				marker.setBubble(bubble);
+				map.addOverlay(marker);
+				markers.push(marker);
+				i++;
+			}
+			// 清除所有标点
+			function clearMarker(){
+				map.clearOverlays();
+				markers=[];
+			}
+			function calculateArea(){
+				var bounds = map.getBounds();
+				plus.maps.Map.calculateArea( bounds, function(event){
+					var area = event.area;  // 计算后的面积值
+					alert("Area:"+area);
+				}, function(e){
+					alert("Failed:"+JSON.stringify(e));
+				} );
+			}
+			// 显示地图
+			function showMap(){
+				map.show();
+				mui.toast('show')
+			}
+			// 关闭地图
+			function closeMap(){
+				map.close();
+				mui.toast('close')
+			}
+			// 隐藏地图
+			function hideMap(){
+				mui.toast('hide')
+				map.hide();
+			}
+			// 获取用户的当前位置信息
+			function getUserLocation(){
+				map.getUserLocation( function ( state, point ){
+					if( 0 == state ){
+						alert( JSON.stringify(point) );
+					}else{
+						alert( "Failed!" );
+					}
+				} );
+			}
+			
+			// 获取是否打开用户位置
+			function isUserLocation(){
+				alert( map.isShowUserLocation() );
+				mui.toast('open')
+			}
+			// 打开地图交通信息图层
+			function showTraffic(){
+				map.setTraffic( true );
+				mui.toast('open');
+			}
+			// 关闭地图交通信息图层
+			function hideTraffic(){
+				map.setTraffic( false );
+				mui.toast('close');
+			}*/
+			
+		})
+		
+			
+		
+	</script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <script src="js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <link href="css/productDetail.css" rel="stylesheet"/>
+    <script type="text/javascript" charset="utf-8">
+      	mui.init();
+    </script>
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav">
+	    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+	    <!--<a class="mui-action-back mui-icon mui-icon-search  mui-pull-right"></a>-->
+	    <h1 class="mui-title">产品详情</h1>
+	</header>
+	<div class="mui-content">
+		<div class="pic">
+			<img src="img/tableau.png"/>
+		</div>
+		<div class="same">
+			<h2><b><img src="img/qiye.png"/></b><i>公司简介</i></h2>
+			<ul class="mui-table-view cList">
+			    <li class="mui-table-view-cell mui-media">
+			        <a href="javascript:;">
+			            <img class="mui-media-object mui-pull-left" src="img/grey.png">
+			            <div class="mui-media-body">
+			                <p class="mui-ellipsis">北京网数时代科技股份有限公司</p>
+			            </div>
+			        </a>
+			    </li>
+			    <li class="mui-table-view-cell mui-media">
+			        <a href="javascript:;">
+			            <img class="mui-media-object mui-pull-left" src="img/grey.png">
+			            <div class="mui-media-body">
+			                <p class="mui-ellipsis">北京网数时代科技股份有限公司</p>
+			            </div>
+			        </a>
+			    </li>
+			    <li class="mui-table-view-cell mui-media">
+			        <a href="javascript:;">
+			            <img class="mui-media-object mui-pull-left" src="img/grey.png">
+			            <div class="mui-media-body">
+			                <p class="mui-ellipsis">北京网数时代科技股份有限公司</p>
+			            </div>
+			        </a>
+			    </li>
+			    <li class="mui-table-view-cell mui-media">
+			        <a href="javascript:;">
+			            <img class="mui-media-object mui-pull-left" src="img/grey.png">
+			            <div class="mui-media-body">
+			                <p class="mui-ellipsis">北京网数时代科技股份有限公司</p>
+			            </div>
+			        </a>
+			    </li>
+			    <li class="mui-table-view-cell mui-media">
+			        <a href="javascript:;">
+			            <img class="mui-media-object mui-pull-left" src="img/grey.png">
+			            <div class="mui-media-body">
+			                <p class="mui-ellipsis">北京网数时代科技股份有限公司北京网数时代科技股份有限公司</p>
+			            </div>
+			        </a>
+			    </li>
+			</ul>
+		</div>
+		<div class="same">
+			<h2><b><img src="img/chanpin.png"/></b><i>产品中心</i></h2>
+			<ul class="mui-table-view mui-grid-view">
+			        <li class="mui-table-view-cell mui-col-sm-3">
+			        	<a href="###">
+			        		<i><img src="img/shenghua.png"/></i>
+			           	 	<span>软件统计</span>
+			        	</a>
+			            
+			        </li>
+			       <li class="mui-table-view-cell mui-col-sm-3">
+				       	<a href="###">
+			            	<span>生化软件</span>
+				       		<i><img src="img/shenghua.png"/></i>
+
+				       	</a>
+			           
+			        </li>
+			        <li class="mui-table-view-cell mui-col-sm-3">
+			        	<a href="###">
+			        		<i><img src="img/shenghua.png"/></i>
+			            	<span>软件仿真</span>
+			        	</a>
+			            
+			        </li>
+			        <li class="mui-table-view-cell mui-col-sm-3">
+			        	<a href="###">
+			            	<span>环境软件</span>
+			        		<i><img src="img/shenghua.png"/></i>
+
+			        	</a>
+			            
+			        </li>
+			    </ul>
+		</div>
+		
+		<div class="same success">
+			<h2><b><img src="img/chanpin.png"/></b><i>成功案例</i></h2>
+			<ul class="mui-table-view mui-grid-view">
+			        <li class="mui-table-view-cell mui-col-sm-3">
+						<img src="img/xiangiqng_pic1.png"/>			            
+			        </li>
+			        <li class="mui-table-view-cell mui-col-sm-3">
+						<img src="img/xiangiqng_pic2.png"/>			            
+			        </li>
+			        <li class="mui-table-view-cell mui-col-sm-3">
+						<img src="img/xiangiqng_pic3.png"/>			            
+			        </li>
+			        <li class="mui-table-view-cell mui-col-sm-3">
+						<img src="img/xiangiqng_pic4.png"/>			            
+			        </li>
+			        <li class="mui-table-view-cell mui-col-sm-3">
+						<img src="img/xiangiqng_pic4.png"/>			            
+			        </li>
+			        <li class="mui-table-view-cell mui-col-sm-3">
+						<img src="img/xiangiqng_pic3.png"/>			            
+			        </li>
+			        <li class="mui-table-view-cell mui-col-sm-3">
+						<img src="img/xiangiqng_pic2.png"/>			            
+			        </li>
+			        <li class="mui-table-view-cell mui-col-sm-3">
+						<img src="img/xiangiqng_pic1.png"/>			            
+			        </li>
+			    </ul>
+		</div>
+	</div>
+	<script type="text/javascript">
+		mui.init(); 
+		mui.plusReady(function(){
+			var obj=plus.webview.currentWebview();
+			var index=obj.index;
+			mui.toast(index);
+		})
+		
+	</script>
+</body>
+</html>
